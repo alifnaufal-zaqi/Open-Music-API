@@ -31,7 +31,7 @@ exports.up = (pgm) => {
     },
     album_id: {
       type: "VARCHAR(50)",
-      notNull: true,
+      notNull: false,
       references: `"albums"(id)`,
       onDelete: "CASCADE",
       onUpdate: "CASCADE",
